@@ -8,9 +8,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ContactComponent implements OnInit {
   private baseUrl = 'https://projcba.herokuapp.com/';
-  alluser = [];
+  alluser: any = [];
   uid: any;
-  user : any[];
+  user: any = [];
 
   constructor(private q: HttpClient) { }
 
@@ -28,14 +28,14 @@ export class ContactComponent implements OnInit {
       this.ngOnInit();
     });
   }
-   toupdate(k){
-     this.user = k;
-   }
-   userupdate(ud){
-    this.q.put(this.baseUrl + '/updateuser/' , ud.value).subscribe(k => {
+  toupdate(k) {
+    this.user = k;
+  }
+  userupdate(ud) {
+    this.q.put(this.baseUrl + '/updateuser/', ud.value).subscribe(k => {
       this.ngOnInit();
     });
-     
-   }
+
+  }
 
 }
