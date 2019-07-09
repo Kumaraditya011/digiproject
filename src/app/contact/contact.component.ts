@@ -7,7 +7,10 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  private baseUrl = 'https://projcba.herokuapp.com/';
+  private baseUrl = 'https://projcba.herokuapp.com';
+  // private baseUrl = 'http://localhost:3000';
+
+
   alluser: any = [];
   uid: any;
   user: any = [];
