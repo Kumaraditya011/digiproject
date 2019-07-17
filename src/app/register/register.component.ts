@@ -7,7 +7,9 @@ import{HttpClient } from '@angular/common/http';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-  private baseUrl = 'https://projcba.herokuapp.com/';
+   private baseUrl = 'https://projcba.herokuapp.com';
+ // private baseUrl = 'http://localhost:3000';
+
 
   constructor(private q: HttpClient) { }
 

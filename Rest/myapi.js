@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var UserCollection = require('../Model/mymodel');
 
+
 router.post('/adduser', (req, res) => {
     // var uc = new UserCollection({
     // Name: req.body.Name,
@@ -43,4 +44,5 @@ UserCollection.findById(req.body._id, (err, data) => {
 
 });
 });
+
 module.exports = router;

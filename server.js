@@ -4,6 +4,13 @@ const http = require('http');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
+//additional
+
+const multer = require('multer');
+const GridFsStorage = require('multer-gridfs-storage');
+const Grid = require('gridfs-stream');
+
+
 
 mongoose.connect('mongodb+srv://aditya:kumar123@cluster0-fltlr.mongodb.net/test?retryWrites=true&w=majority',{useNewUrlParser:true});
 const app = express();

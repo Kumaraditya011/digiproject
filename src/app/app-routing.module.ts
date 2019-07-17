@@ -12,8 +12,10 @@ const routes: Routes = [
   {path:'contact',component:ContactComponent},
 
 
+
+
   {path:'',component:RegisterComponent},
-  {path:"**", redirectTo: 'ErrorComponent', pathMatch:'full'},
+   {path:"**", redirectTo: 'ErrorComponent', pathMatch:'full'},
 
 
 ];
